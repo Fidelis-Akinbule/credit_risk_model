@@ -1,0 +1,46 @@
+PREPROCESSING & FEATURE ENGINEERING REPORT
+======================================================================
+Generated: 2025-12-13 23:22:41
+
+PHASE 1: DATA CLEANING
+----------------------------------------------------------------------
+Duplicates removed: 609
+Age fixes: 14
+Extreme utilization capped: 600
+Extreme debt capped: 24378
+
+PHASE 2: MISSING VALUE TREATMENT
+----------------------------------------------------------------------
+MonthlyIncome imputed: 29221 ($5,400.00)
+NumberOfDependents imputed: 3828 (0.0)
+
+PHASE 3: OUTLIER TREATMENT
+----------------------------------------------------------------------
+MonthlyIncome: P99=23084.00, Flagged=1494
+NumberOfOpenCreditLinesAndLoans: P99=24.00, Flagged=1476
+NumberOfTime30-59DaysPastDueNotWorse: P99=4.00, Flagged=806
+NumberOfTimes90DaysLate: P99=3.00, Flagged=829
+NumberOfTime60-89DaysPastDueNotWorse: P99=2.00, Flagged=711
+
+
+FEATURE ENGINEERING SUMMARY
+======================================================================
+Original features: 11
+Engineered features: 19
+Total features: 30
+
+Feature Breakdown:
+  - Log transforms: 9
+  - Flags (extreme/missing/outlier): 9
+  - Delinquency features: 4
+  - Financial ratios: 4
+  - Interactions: 3
+  - Original (age): 1
+
+FINAL DATASET SHAPES
+----------------------------------------------------------------------
+Train: (149391, 40)
+Test: (101175, 40)
+X_train_final: (119512, 30)
+X_val_final: (29879, 30)
+Target distribution: 6.70% defaults

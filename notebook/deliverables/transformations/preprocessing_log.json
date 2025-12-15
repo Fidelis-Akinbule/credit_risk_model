@@ -1,0 +1,136 @@
+{
+  "phase_1_cleaning": {
+    "duplicates_removed": {
+      "train": 609.0,
+      "test": 328.0
+    },
+    "age_fixes": {
+      "median_used": 52.0,
+      "train_age_zero_fixed": 1.0,
+      "train_age_over100_capped": 13.0,
+      "test_age_zero_fixed": 0.0,
+      "test_age_over100_capped": 3.0
+    },
+    "utilization_extreme": {
+      "threshold": 1.5,
+      "p99_cap": 1.0939219183000002,
+      "train_flagged": 600.0,
+      "test_flagged": 408.0,
+      "flag_column": "util_extreme_flag"
+    },
+    "debt_extreme": {
+      "threshold": 100,
+      "p99_cap": 4985.100000000006,
+      "train_flagged": 24378.0,
+      "test_flagged": 16369.0,
+      "flag_column": "debt_extreme_flag"
+    }
+  },
+  "phase_2_missing": {
+    "monthly_income": {
+      "train_missing": 29221.0,
+      "test_missing": 19826.0,
+      "imputation_value": 5400.0,
+      "flag_column": "income_missing"
+    },
+    "number_of_dependents": {
+      "train_missing": 3828.0,
+      "test_missing": 2566.0,
+      "imputation_value": 0.0,
+      "flag_column": "dependents_missing"
+    }
+  },
+  "phase_3_outliers": {
+    "MonthlyIncome": {
+      "p99_threshold": 23084.00000000006,
+      "train_flagged": 1494.0,
+      "test_flagged": 1048.0,
+      "flag_column": "MonthlyIncome_outlier_flag"
+    },
+    "NumberOfOpenCreditLinesAndLoans": {
+      "p99_threshold": 24.0,
+      "train_flagged": 1476.0,
+      "test_flagged": 1021.0,
+      "flag_column": "NumberOfOpenCreditLinesAndLoans_outlier_flag"
+    },
+    "NumberOfTime30-59DaysPastDueNotWorse": {
+      "p99_threshold": 4.0,
+      "train_flagged": 806.0,
+      "test_flagged": 549.0,
+      "flag_column": "NumberOfTime30-59DaysPastDueNotWorse_outlier_flag"
+    },
+    "NumberOfTimes90DaysLate": {
+      "p99_threshold": 3.0,
+      "train_flagged": 829.0,
+      "test_flagged": 569.0,
+      "flag_column": "NumberOfTimes90DaysLate_outlier_flag"
+    },
+    "NumberOfTime60-89DaysPastDueNotWorse": {
+      "p99_threshold": 2.0,
+      "train_flagged": 711.0,
+      "test_flagged": 486.0,
+      "flag_column": "NumberOfTime60-89DaysPastDueNotWorse_outlier_flag"
+    }
+  },
+  "phase_4_transformations": {
+    "RevolvingUtilizationOfUnsecuredLines": {
+      "transformation": "log1p",
+      "new_column": "RevolvingUtilizationOfUnsecuredLines_log",
+      "train_zeros": 10569.0
+    },
+    "DebtRatio": {
+      "transformation": "log1p",
+      "new_column": "DebtRatio_log",
+      "train_zeros": 3515.0
+    },
+    "MonthlyIncome": {
+      "transformation": "log1p",
+      "new_column": "MonthlyIncome_log",
+      "train_zeros": 1616.0
+    },
+    "NumberOfTime30-59DaysPastDueNotWorse": {
+      "transformation": "log1p",
+      "new_column": "NumberOfTime30-59DaysPastDueNotWorse_log",
+      "train_zeros": 125453.0
+    },
+    "NumberOfTime60-89DaysPastDueNotWorse": {
+      "transformation": "log1p",
+      "new_column": "NumberOfTime60-89DaysPastDueNotWorse_log",
+      "train_zeros": 141831.0
+    },
+    "NumberOfTimes90DaysLate": {
+      "transformation": "log1p",
+      "new_column": "NumberOfTimes90DaysLate_log",
+      "train_zeros": 141108.0
+    },
+    "NumberOfOpenCreditLinesAndLoans": {
+      "transformation": "log1p",
+      "new_column": "NumberOfOpenCreditLinesAndLoans_log",
+      "train_zeros": 1712.0
+    },
+    "NumberRealEstateLoansOrLines": {
+      "transformation": "log1p",
+      "new_column": "NumberRealEstateLoansOrLines_log",
+      "train_zeros": 55579.0
+    },
+    "NumberOfDependents": {
+      "transformation": "log1p",
+      "new_column": "NumberOfDependents_log",
+      "train_zeros": 90220.0
+    },
+    "scaler": {
+      "features_scaled": [
+        "RevolvingUtilizationOfUnsecuredLines_log",
+        "DebtRatio_log",
+        "MonthlyIncome_log",
+        "NumberOfTime30-59DaysPastDueNotWorse_log",
+        "NumberOfTime60-89DaysPastDueNotWorse_log",
+        "NumberOfTimes90DaysLate_log",
+        "NumberOfOpenCreditLinesAndLoans_log",
+        "NumberRealEstateLoansOrLines_log",
+        "NumberOfDependents_log",
+        "age"
+      ]
+    }
+  }
+}

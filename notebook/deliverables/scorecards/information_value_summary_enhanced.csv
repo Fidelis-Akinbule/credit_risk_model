@@ -1,0 +1,6 @@
+Feature,IV,SHAP_Importance,IV_Category
+total_delinquencies,1.457010843158631,0.5927,Very Strong
+RevolvingUtilizationOfUnsecuredLines_log,1.0486371520127464,0.5461,Very Strong
+utilization_category,1.042220915175223,0.2323,Very Strong
+age,0.2250680208060268,0.2276,Medium
+worst_delinquency,1.398402508256432,0.1858,Very Strong

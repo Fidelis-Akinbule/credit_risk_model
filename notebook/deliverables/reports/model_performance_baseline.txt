@@ -1,0 +1,32 @@
+BASELINE LOGISTIC REGRESSION - PERFORMANCE REPORT
+======================================================================
+Generated: 2025-12-13 23:22:41
+
+MODEL SPECIFICATIONS
+----------------------------------------------------------------------
+Algorithm: Logistic Regression (L2 Regularization)
+Features: 30
+Training samples: 119,512
+Validation samples: 29,879
+Class weight: Balanced
+Best C (regularization): 0.01
+
+PERFORMANCE METRICS
+----------------------------------------------------------------------
+Train AUC: 0.8590
+Validation AUC: 0.8578
+Cross-validation AUC (5-fold): 0.8585
+Overfitting check: 0.0012 (Excellent - minimal overfitting)
+
+TOP 10 FEATURES BY IMPORTANCE
+----------------------------------------------------------------------
+RevolvingUtilizationOfUnsecuredLines_log: 0.5583
+worst_delinquency: 0.4514
+has_delinquency: 0.3944
+MonthlyIncome_outlier_flag: 0.3897
+age_delinq_interaction: 0.3416
+age: -0.2894
+credit_lines_per_dependent: 0.2546
+debt_extreme_flag: -0.2336
+NumberOfTime30-59DaysPastDueNotWorse_outlier_flag: -0.2067
+age_income_interaction: -0.2013

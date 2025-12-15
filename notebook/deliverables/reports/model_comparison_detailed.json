@@ -1,0 +1,146 @@
+{
+    "AUC": [
+        {
+            "Model": "Logistic Regression",
+            "Train_AUC": 0.8590075658374053,
+            "Val_AUC": 0.857808502434897,
+            "Overfit": 0.0011990634025083047
+        },
+        {
+            "Model": "XGBoost",
+            "Train_AUC": 0.8746254184218557,
+            "Val_AUC": 0.8674562156285441,
+            "Overfit": 0.007169202793311569
+        },
+        {
+            "Model": "LightGBM",
+            "Train_AUC": 0.8511677646392843,
+            "Val_AUC": 0.8477218874679145,
+            "Overfit": 0.0034458771713697933
+        }
+    ],
+    "KS": [
+        {
+            "Model": "Logistic Regression",
+            "Train_KS": 0.5611561644916692,
+            "Val_KS": 0.5676822908052954,
+            "KS_Diff": -0.006526126313626257
+        },
+        {
+            "Model": "XGBoost",
+            "Train_KS": 0.5907323188976608,
+            "Val_KS": 0.582589541605935,
+            "KS_Diff": 0.008142777291725745
+        },
+        {
+            "Model": "LightGBM",
+            "Train_KS": 0.54611407655403,
+            "Val_KS": 0.5509625073781905,
+            "KS_Diff": -0.004848430824160532
+        }
+    ],
+    "Brier": [
+        {
+            "Model": "Logistic Regression",
+            "Train_Brier": 0.14530559338204793,
+            "Val_Brier": 0.14753873987752472
+        },
+        {
+            "Model": "XGBoost",
+            "Train_Brier": 0.048517496200215234,
+            "Val_Brier": 0.04840461592049653
+        },
+        {
+            "Model": "LightGBM",
+            "Train_Brier": 0.050270311025297484,
+            "Val_Brier": 0.050258774090231696
+        }
+    ],
+    "Calibration_Gap": [
+        {
+            "Model": "Logistic Regression",
+            "Mean_Predicted": 0.3359995252152149,
+            "Actual_Rate": 0.06700358111047894,
+            "Calibration_Gap": 0.268995944104736
+        },
+        {
+            "Model": "XGBoost",
+            "Mean_Predicted": 0.06700359109597501,
+            "Actual_Rate": 0.06700358111047894,
+            "Calibration_Gap": 9.985496068898314e-09
+        },
+        {
+            "Model": "LightGBM",
+            "Mean_Predicted": 0.06700358111047895,
+            "Actual_Rate": 0.06700358111047894,
+            "Calibration_Gap": 1.3877787807814457e-17
+        }
+    ],
+    "Precision": [
+        {
+            "Model": "Logistic Regression",
+            "P@10%": 0.3672581185135588,
+            "Capture@10%": 0.547952047952048,
+            "P@20%": 0.24217573221757321,
+            "Capture@20%": 0.7227772227772228,
+            "P@30%": 0.18297445051879951,
+            "Capture@30%": 0.8191808191808192
+        },
+        {
+            "Model": "XGBoost",
+            "P@10%": 0.37730164044191494,
+            "Capture@10%": 0.5629370629370629,
+            "P@20%": 0.24635983263598327,
+            "Capture@20%": 0.7352647352647352,
+            "P@30%": 0.18665625348655585,
+            "Capture@30%": 0.8356643356643356
+        },
+        {
+            "Model": "LightGBM",
+            "P@10%": 0.36123200535654504,
+            "Capture@10%": 0.538961038961039,
+            "P@20%": 0.23732217573221756,
+            "Capture@20%": 0.7082917082917083,
+            "P@30%": 0.1784000892558295,
+            "Capture@30%": 0.7987012987012987
+        }
+    ],
+    "Rankings": {
+        "AUC": [
+            "XGBoost",
+            "Logistic Regression",
+            "LightGBM"
+        ],
+        "KS": [
+            "XGBoost",
+            "Logistic Regression",
+            "LightGBM"
+        ],
+        "Gini": [
+            "XGBoost",
+            "Logistic Regression",
+            "LightGBM"
+        ],
+        "P@10%": [
+            "XGBoost",
+            "Logistic Regression",
+            "LightGBM"
+        ],
+        "Brier": [
+            "XGBoost",
+            "LightGBM",
+            "Logistic Regression"
+        ],
+        "LogLoss": [
+            "XGBoost",
+            "LightGBM",
+            "Logistic Regression"
+        ],
+        "Calib_Gap": [
+            "LightGBM",
+            "XGBoost",
+            "Logistic Regression"
+        ]
+    },
+    "Winner": "XGBoost"
+}

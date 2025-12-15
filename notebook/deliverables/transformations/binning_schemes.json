@@ -1,0 +1,92 @@
+{
+  "age": {
+    "bin_edges": [
+      0.0,
+      25.0,
+      35.0,
+      50.0,
+      65.0,
+      150.0
+    ],
+    "bin_labels": [
+      "18-25 (Young)",
+      "26-35 (Early Career)",
+      "36-50 (Mid Career)",
+      "51-65 (Late Career)",
+      "65+ (Retirement)"
+    ],
+    "rationale": "Standard demographic segments used in credit scoring"
+  },
+  "MonthlyIncome": {
+    "bin_edges": [
+      0.0,
+      3400.0,
+      5376.0,
+      5416.0,
+      8282.0,
+      23084.00000000006
+    ],
+    "bin_labels": [
+      "Very Low (Q1)",
+      "Low (Q2)",
+      "Medium (Q3)",
+      "High (Q4)",
+      "Very High (Q5)"
+    ],
+    "rationale": "Quintiles ensure equal sample sizes for stable scorecard"
+  },
+  "RevolvingUtilizationOfUnsecuredLines": {
+    "bin_edges": [
+      0.0,
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      1.1
+    ],
+    "bin_labels": [
+      "Excellent (0-10%)",
+      "Good (10-30%)",
+      "Fair (30-50%)",
+      "Poor (50-70%)",
+      "Very Poor (70%+)"
+    ],
+    "rationale": "FICO Score thresholds: >30% hurts score, >70% severe impact"
+  },
+  "DebtRatio": {
+    "bin_edges": [
+      0.0,
+      0.2,
+      0.36,
+      0.43,
+      1.0,
+      5000.0
+    ],
+    "bin_labels": [
+      "Excellent (<20%)",
+      "Good (20-36%)",
+      "Acceptable (36-43%)",
+      "Subprime (43-100%)",
+      "Very High (100%+)"
+    ],
+    "rationale": "43% = QM threshold (Qualified Mortgage), 36% = conventional lending limit"
+  },
+  "total_delinquencies": {
+    "bin_edges": [
+      -0.5,
+      0.5,
+      1.5,
+      3.5,
+      6.5,
+      100.0
+    ],
+    "bin_labels": [
+      "None (0)",
+      "Minor (1)",
+      "Moderate (2-3)",
+      "Severe (4-6)",
+      "Extreme (7+)"
+    ],
+    "rationale": "Groups by severity level; multiple recent delinquencies = high risk"
+  }
+}

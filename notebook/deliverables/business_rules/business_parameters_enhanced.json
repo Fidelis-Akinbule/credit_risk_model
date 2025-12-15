@@ -1,0 +1,50 @@
+{
+    "model_info": {
+        "model_type": "XGBoost with Isotonic Calibration",
+        "auc": 0.8675,
+        "ks_statistic": 0.5826,
+        "calibration_gap": 9.985496e-09,
+        "brier_score": 0.0484,
+        "optimal_threshold_prob": 0.0708,
+        "optimal_threshold_score": 583.9872112584667,
+        "optimal_sensitivity": 0.7957,
+        "optimal_specificity": 0.7869
+    },
+    "business_params": {
+        "LGD": 0.6,
+        "EAD": 10000,
+        "PROCESSING_COST": 50,
+        "INTEREST_RATE": 0.15,
+        "LOAN_TERM": 3,
+        "REVENUE_PER_LOAN": 4500.0,
+        "BREAKEVEN_DEFAULT_RATE": 0.4238095238095238,
+        "BREAKEVEN_SCORE": 487.5940129347316,
+        "BASELINE_DEFAULT_RATE": 0.06700358111047894,
+        "BASELINE_EXPECTED_LOSS": 402.0214866628736
+    },
+    "optimal_strategy": {
+        "name": "Very Aggressive",
+        "auto_approve_cutoff": 533.9872112584667,
+        "manual_review_cutoff": 433.9872112584667,
+        "approval_rate": 0.9511864520231601,
+        "approved_default_rate": 0.05021023556939533,
+        "total_profit": 111487723.22072312,
+        "profit_per_approved": 3922.792463915945,
+        "roi": 1116.7727552544816
+    },
+    "improvement_vs_baseline": {
+        "loss_reduction": 3449998.2207231224,
+        "loss_reduction_pct": 28.7212639087839,
+        "profit_improvement": -452826.77927686274,
+        "default_rate_reduction_pp": 1.6793345541083609
+    },
+    "distribution_shift": {
+        "validation_mean_prob": 0.06700359109597501,
+        "test_mean_prob": 0.10766489371993357,
+        "shift_factor": 1.6068525874339463,
+        "test_auto_approve_cutoff": 563.9872112584667,
+        "test_manual_review_cutoff": 463.9872112584667,
+        "test_loss_multiplier": 1.6068525874339463,
+        "adjusted_interest_rate": 0.19551394405754596
+    }
+}

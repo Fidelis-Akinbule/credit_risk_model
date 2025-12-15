@@ -1,0 +1,75 @@
+{
+    "model_info": {
+        "model_type": "XGBoost with Isotonic Calibration",
+        "validation_auc": 0.8675,
+        "validation_ks": 0.5826,
+        "calibration_gap": 9.985496e-09,
+        "brier_score": 0.0484,
+        "precision_at_10": 0.3773,
+        "lift_at_10": 5.631067
+    },
+    "scorecard_params": {
+        "PDO": 30,
+        "BASE_SCORE": 600,
+        "BASE_ODDS": 19,
+        "FACTOR": 43.2808512266689,
+        "OFFSET": 472.56217459669244,
+        "FORMULA": "Score = 472.5622 + 43.2809 * ln((1-p)/p)"
+    },
+    "optimal_threshold": {
+        "probability": 0.0708,
+        "score": 583.9872112584667,
+        "sensitivity": 0.7957,
+        "specificity": 0.7869
+    },
+    "distribution_shift": {
+        "validation_mean_prob": 0.06700359109597501,
+        "test_mean_prob": 0.10766489371993357,
+        "shift_percentage": 60.685258743394634,
+        "warning": "Test set shows 60.7% higher default probability"
+    },
+    "shap_top_features": [
+        {
+            "feature": "total_delinquencies",
+            "importance": 0.5927
+        },
+        {
+            "feature": "RevolvingUtilizationOfUnsecuredLines_log",
+            "importance": 0.5461
+        },
+        {
+            "feature": "utilization_category",
+            "importance": 0.2323
+        },
+        {
+            "feature": "age",
+            "importance": 0.2276
+        },
+        {
+            "feature": "worst_delinquency",
+            "importance": 0.1858
+        }
+    ],
+    "risk_bands": {
+        "Very Low Risk": {
+            "min": 700,
+            "max": 900
+        },
+        "Low Risk": {
+            "min": 650,
+            "max": 699
+        },
+        "Medium Risk": {
+            "min": 600,
+            "max": 649
+        },
+        "High Risk": {
+            "min": 550,
+            "max": 599
+        },
+        "Very High Risk": {
+            "min": 300,
+            "max": 549
+        }
+    }
+}

@@ -1,0 +1,33 @@
+FINAL FEATURE LIST (30 features)
+==================================================
+
+1. age
+2. util_extreme_flag
+3. debt_extreme_flag
+4. income_missing
+5. dependents_missing
+6. MonthlyIncome_outlier_flag
+7. NumberOfOpenCreditLinesAndLoans_outlier_flag
+8. NumberOfTime30-59DaysPastDueNotWorse_outlier_flag
+9. NumberOfTimes90DaysLate_outlier_flag
+10. NumberOfTime60-89DaysPastDueNotWorse_outlier_flag
+11. RevolvingUtilizationOfUnsecuredLines_log
+12. DebtRatio_log
+13. MonthlyIncome_log
+14. NumberOfTime30-59DaysPastDueNotWorse_log
+15. NumberOfTime60-89DaysPastDueNotWorse_log
+16. NumberOfTimes90DaysLate_log
+17. NumberOfOpenCreditLinesAndLoans_log
+18. NumberRealEstateLoansOrLines_log
+19. NumberOfDependents_log
+20. total_delinquencies
+21. has_delinquency
+22. worst_delinquency
+23. has_90day_late
+24. monthly_debt_payment
+25. credit_lines_per_dependent
+26. utilization_category
+27. income_per_dependent
+28. age_income_interaction
+29. util_debt_interaction
+30. age_delinq_interaction

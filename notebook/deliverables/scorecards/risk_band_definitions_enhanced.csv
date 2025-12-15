@@ -1,0 +1,6 @@
+Risk_Band,Score_Min,Score_Max,Recommended_Action,Suggested_Interest_Rate,Optimal_Threshold
+Very Low Risk,700,900,Auto-Approve (Prime),6-10% APR,
+Low Risk,650,699,Approve (Near Prime),10-15% APR,
+Medium Risk,600,649,Manual Review,15-20% APR,
+High Risk,550,599,Additional Verification Required,20-25% APR,<-- Optimal cutoff: 584
+Very High Risk,300,549,Decline / High Interest Only,25%+ APR or Decline,
