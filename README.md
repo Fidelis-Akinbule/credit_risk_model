@@ -7,8 +7,6 @@
 
 > **Production-ready credit risk assessment system that reduces annual loan losses by $3.45M (28.7%) while maintaining 95% approval rates.**
 
-![Dashboard Preview](outputs/visualizations/dashboard_preview.png)
-
 ---
 
 ## 📋 Table of Contents
