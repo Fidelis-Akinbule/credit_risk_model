@@ -686,8 +686,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Fidelis Akinbule**
 
-- 📧 Email: [your.email@example.com](fakinbule@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/fidelis-akinbule)
+- 📧 Email: [fakinbule@gmail.com](fakinbule@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/fidelis-akinbule](https://linkedin.com/in/fidelis-akinbule)
 - 🐱 GitHub: [@Fidelis-Akinbule](https://github.com/Fidelis-Akinbule)
 
 
